@@ -47,7 +47,43 @@
         <!--container do meio principal da página-->
         <div class="meioPrincipal">
             <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nibh lectus, porttitor non maximus sed, tincidunt ac massa. Sed quis lorem dignissim, vulputate metus sed, lacinia nulla. Donec nec consequat lectus, vel maximus dolor. Nunc in massa blandit diam bibendum faucibus molestie id nunc. Vivamus rutrum, lorem quis pharetra finibus, sapien mi cursus est, vel porta risus nunc ut nisl. Sed vitae purus vel dui pulvinar sodales. Aenean sit amet sodales urna. Duis dictum ante vulputate ex gravida imperdiet. Vestibulum mauris leo, gravida non auctor sit amet, viverra at velit. Praesent non tempor nibh. Proin ut enim ac odio varius condimentum non eget nunc. Fusce quis eros in nulla tempus hendrerit.
+                sdfsadf
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let open = false;
+
+        function clicked() {
+            open = !open;
+            if (open) {
+                document.getElementsByClassName('containerLinks')[0].setAttribute('style', 'left: 0%')
+                document.getElementsByClassName('containerBtn')[0].setAttribute('style', 'display: none')
+            } else {
+                document.getElementsByClassName('containerLinks')[0].setAttribute('style', 'left: -51%')
+                
+                document.getElementsByClassName('containerBtn')[0].setAttribute('style', 'display: inline-block')
+                
+            }
+        }
+
+        window.addEventListener('click', function (e) {
+            if (!(document.getElementsByClassName('containerLinks')[0].contains(e.target)) && !(document
+                    .getElementsByClassName('iconBtn')[0].contains(e.target))) {
+                if (open) {
+                    clicked();
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
+
+<!--
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nibh lectus, porttitor non maximus sed, tincidunt ac massa. Sed quis lorem dignissim, vulputate metus sed, lacinia nulla. Donec nec consequat lectus, vel maximus dolor. Nunc in massa blandit diam bibendum faucibus molestie id nunc. Vivamus rutrum, lorem quis pharetra finibus, sapien mi cursus est, vel porta risus nunc ut nisl. Sed vitae purus vel dui pulvinar sodales. Aenean sit amet sodales urna. Duis dictum ante vulputate ex gravida imperdiet. Vestibulum mauris leo, gravida non auctor sit amet, viverra at velit. Praesent non tempor nibh. Proin ut enim ac odio varius condimentum non eget nunc. Fusce quis eros in nulla tempus hendrerit.
 
                 Vestibulum id ipsum in dui tincidunt vestibulum ac vitae nisi. Phasellus sed hendrerit dolor. Vivamus vitae imperdiet metus, vel fermentum libero. Aenean porttitor fringilla arcu, quis accumsan velit consequat a. Nam mattis, elit et interdum tincidunt, ex ex volutpat dolor, in mattis lectus erat quis felis. Ut ante justo, sagittis ut iaculis vel, vulputate in lacus. Nam vitae sem sed lacus malesuada suscipit. Vestibulum auctor a lorem ut mattis. Ut elementum a purus in lobortis. Aliquam leo metus, mollis at est in, semper euismod mi. Curabitur ut metus dolor. Praesent hendrerit ex urna, ac scelerisque dolor blandit id. Sed consequat pretium ultricies.
                 
@@ -84,31 +120,4 @@
                 Ut quis neque nec lacus fringilla varius. Nulla facilisi. Sed et ex at nunc sodales aliquet. Ut venenatis lorem et ipsum tincidunt, sit amet ornare est porttitor. Integer justo diam, pretium ut enim in, ultricies efficitur massa. Pellentesque ex tellus, tempus id sem posuere, sodales congue dolor. Donec mattis vehicula tortor quis cursus.
 
 
-
-            </div> 
-        </div>
-    </div>
-
-    <script>
-        let open = false;
-
-        function clicked() {
-            open = !open;
-            open ?
-                document.getElementsByClassName('containerLinks')[0].setAttribute('style', 'left: 0%') :
-                document.getElementsByClassName('containerLinks')[0].setAttribute('style', 'left: -50%')
-
-        }
-
-        window.addEventListener('click', function (e) {
-            if (!(document.getElementsByClassName('containerLinks')[0].contains(e.target)) && !(document
-                    .getElementsByClassName('iconBtn')[0].contains(e.target))) {
-                if (open) {
-                    clicked();
-                }
-            }
-        });
-    </script>
-</body>
-
-</html>
+-->
