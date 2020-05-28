@@ -1,0 +1,101 @@
+body {
+    margin: 0px;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+.toolbar {
+    background: #033c05;
+    border-style: solid;
+    border-width: 1px;
+    height: 80px;
+    /*Tamanho final: 82px*/
+}
+
+.containerViewport {
+    background: #033c05;
+    height: 100%
+}
+
+.meioPrincipal {
+    background: white;
+    position: absolute;
+    top: 82px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    margin: 0px 15px 0px 15px;
+    border-radius: 10px
+}
+
+@media (min-width: 600px) {
+    .btnAbrirDrawer {
+        display: none;
+    }
+
+    .iconBtn {}
+
+    .containerLinks {
+        float: right;
+        height: 100%;
+        background: #033c05;
+    }
+
+    .links {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+
+    .link {
+        margin: 0px 20px 0px 20px;
+        color: white
+    }
+}
+
+@media (max-width: 599px) {
+    .btnAbrirDrawer {
+        display: inline-flex;
+        height: 100%;
+        align-items: center;
+        color: white
+    }
+
+    .containerBtn {
+        height: 100%;
+        display: block;
+
+    }
+
+    .iconBtn {}
+
+    .containerLinks {
+        height: 100%;
+        background: #033c05;
+        display: inline-block;
+        position: fixed;
+        transition-property: left;
+        transition-duration: 100ms;
+        transition-timing-function: linear;
+        transition-delay: 0s;
+        width: 50%;
+        left: -50%;
+        border-style: solid;
+        border-width: 1px;
+        box-shadow: 2px -1px 5px grey;
+    }
+
+    .links {
+        display: flex;
+        height: 100%;
+        flex-flow: column;
+    }
+
+    .link {
+        margin: 0px 20px 0px 20px;
+        color: white
+    }
+}
